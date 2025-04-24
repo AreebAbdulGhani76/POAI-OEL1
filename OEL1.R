@@ -26,6 +26,6 @@ view(PC)
 c <- PC %>% group_by(Performance_Category) %>% summarise(n())
 view(c)
 
-wh <- PC %>% select(Name, Department, Performance_Category, Attendance_Percentage) %>% 
+wh <- PC %>% select(Name, Department, Performance_Category) %>% 
              filter(Attendance_Percentage < 60)
 view(wh)
